@@ -1,0 +1,203 @@
+#navSkip{
+  position: absolute;
+  top: -99px;
+  left: 0;
+  background: #333;
+  color: #fff;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  z-index: 999;
+}
+
+/* header */
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+header h1 {
+  position: absolute;
+  top: 3rem;
+  left: 2rem;
+}
+
+header .main-menu {
+}
+
+header .main-menu .nav-item {
+}
+
+header .main-menu .nav-item a{
+  color: #fff;
+  position: relative;
+}
+header .main-menu .nav-item > a:hover::after{
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #40DDE2;
+  z-index: 2;
+}
+
+header .main-menu .nav-item a i {
+  
+}
+
+header .main-menu .nav-item .item_name {
+  padding: 3rem 4rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+header .main-menu .nav-item .item_name i {
+  font-size: 2rem;
+  vertical-align: initial;
+}
+
+header .main-menu .nav-item .item_contents {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  display: none;
+  background-color: #08347f;
+}
+
+header .main-menu .nav-item:hover .item_contents{
+  display: block;
+  border-top: 1px solid #1a417e;
+}
+
+header .main-menu .nav-item .item_contents .inner {
+  padding: 20px 0;
+}
+header .main-menu .nav-item .item_contents .inner .menu-tit {
+  width: 20%;
+  float: left;
+}
+
+header .main-menu .nav-item .item_contents .inner .menu-tit p {
+  font-size: 3rem;
+  color: #fff;
+  text-align: left;
+  position: relative;
+}
+
+header .main-menu .nav-item .item_contents .inner .menu-tit p:last-child {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-top: 50px;
+  font-family: "Montserrat";
+}
+
+header .main-menu .nav-item .item_contents .inner .menu-tit p:last-child:after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  top: -15px;
+  left: 0;
+}
+
+header .main-menu .nav-item .item_contents .inner .menu-cont {
+  width: 80%;
+  float: right;
+}
+
+header .main-menu .nav-item .item_contents .inner .menu-cont .menu-list {
+  text-align: left;
+}
+
+header .main-menu .nav-item .item_contents .inner .menu-cont .menu-list .list {
+  min-width: 24%;
+  margin-left: 10px;
+}
+
+header .main-menu .nav-item .item_contents .inner .menu-cont .menu-list .list > a {
+  width: 100%;
+  padding: 12px 15px;
+  letter-spacing: -1px;
+  font-size: 1.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: url(../images/icon_arrow.png) no-repeat;
+  background-position: 94% center;
+}
+
+header .main-menu .nav-item .item_contents .inner .menu-cont .menu-list .list ul{
+  padding: 12px;
+  min-width: 24%;
+}
+header .main-menu .nav-item .item_contents .inner .menu-cont .menu-list .list ul li{
+  display: block;
+}
+header .main-menu .nav-item .item_contents .inner .menu-cont .menu-list .list ul li a{
+  color: #99ABCA;
+  padding-left: 15px;
+  position: relative;
+  font-size: 1.4rem;
+  line-height: 1.8;
+}
+header .main-menu .nav-item .item_contents .inner .menu-cont .menu-list .list ul li a::before{
+  content: '';
+  width: 3px;
+  height: 3px;
+  background: rgba(255,255,255,.8);
+  position: absolute;
+  left: 7px;
+  top: 11px;
+  border-radius: 50%;
+}
+header .main-menu .nav-item .item_contents .inner .menu-cont .menu-list .list > a:hover,
+header .main-menu .nav-item .item_contents .inner .menu-cont .menu-list .list ul li a:hover{
+  color:#40DDE2;
+}
+
+header .util {
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+}
+
+header .util li {
+  color: #fff;
+  margin-right: 2rem;
+  vertical-align: bottom;
+}
+
+header .util li a {
+  color: #fff;
+}
+
+header .util li a i {
+  font-size: 25px;
+}
+
+/* main */
+section {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+section .visual-slide {
+  position: absolute;
+  top: 0;
+  max-width: 100%;
+}
+
+section .visual-slide .swiper-wrapper {
+}
+
+section .visual-slide .swiper-wrapper .swiper-slide {
+  max-height: 96rem;
+}
+
+section .visual-slide .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
